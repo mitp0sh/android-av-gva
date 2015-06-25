@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="#15ffffff" android:paddingLeft="10.0dip" android:paddingTop="30.0dip" android:paddingRight="10.0dip" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="60.0dip" android:paddingTop="10.0dip" android:paddingRight="60.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/item_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/camera_trap" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@color/blue_note" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:text="@string/pro_features_pro" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/item_title" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/testing" style="@style/TextWhiteLarge" />
+    </FrameLayout>
+</LinearLayout>

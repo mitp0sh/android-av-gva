@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>10 minutos</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>10% de carga</item>
+        <item>30% de carga</item>
+        <item>50% de carga</item>
+        <item>Desligado</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Silêncio</item>
+        <item>Apenas vibração</item>
+        <item>Apenas som</item>
+        <item>Som e vibração</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Silêncio</item>
+        <item>Apenas vibração</item>
+        <item>Som</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Dias</item>
+        <item>Semanas</item>
+        <item>Meses</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>5 minutos</item>
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Uma vez por dia</item>
+        <item>Uma vez por semana</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Baixa</item>
+        <item>Alta (Recomendado)</item>
+        <item>Extra sensível</item>
+    </string-array>
+</resources>

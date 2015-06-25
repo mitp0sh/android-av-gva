@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:scan_view="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/vendor_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:contentDescription="@string/DummyContentDescription" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/status_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_landing_no_threats" android:contentDescription="@string/DummyContentDescription" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/scanResultsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_landing_no_threats" style="@style/TextWhiteLarge" />
+        <com.antivirus.ui.scan.ScanInProgressViewWrapper android:id="@id/scanIsRunningLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" scan_view:layout_type="full" />
+    </LinearLayout>
+</LinearLayout>

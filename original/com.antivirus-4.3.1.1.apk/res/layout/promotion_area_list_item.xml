@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/dashboard_text_green" android:gravity="center" android:id="@id/textViewPromotionPercentage" android:background="@drawable/promotion_percentage_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10%" android:layout_centerVertical="true" style="@style/TextGreyMedium" />
+    <TextView android:id="@id/textViewPromotionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Promotion text" android:layout_toLeftOf="@id/imageViewPromotionOptions" android:layout_toRightOf="@id/textViewPromotionPercentage" android:layout_centerVertical="true" style="@style/TextGreyMedium" />
+    <ImageView android:id="@id/imageViewPromotionOptions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/promotion_close_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_landing_dashboard_title">13.0px</dimen>
+    <dimen name="sra_log_bottom_margin">0.0dip</dimen>
+    <dimen name="scan_results_group_item_top_padding">10.0dip</dimen>
+    <dimen name="scan_results_list_item_side_offset">10.0dip</dimen>
+    <dimen name="scan_results_group_header_drawable_padding">10.0dip</dimen>
+    <dimen name="scan_results_group_status_left_padding">50.0dip</dimen>
+    <dimen name="scan_results_child_item_top_bottom_padding">5.0dip</dimen>
+    <dimen name="scan_results_child_item_buttons_height">40.0dip</dimen>
+    <dimen name="scan_results_child_item_buttons_side_padding">10.0dip</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avg="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/abc_ic_menu_moreoverflow_normal_holo_dark" android:id="@id/antitheftMenu" android:title="@string/menu_more" avg:showAsAction="always">
+        <menu>
+            <item android:id="@id/menuUnregister" android:title="@string/anti_theft_unregister" avg:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

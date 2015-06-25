@@ -1,0 +1,38 @@
+.class Lcom/google/android/gms/internal/hz$1;
+.super Lcom/google/android/gms/internal/hz$c;
+
+
+# virtual methods
+.method protected a(Lcom/google/android/gms/internal/hv;)V
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/internal/hz$1$1;
+
+    invoke-direct {v0, p0, p0}, Lcom/google/android/gms/internal/hz$1$1;-><init>(Lcom/google/android/gms/internal/hz$1;Lcom/google/android/gms/common/api/BaseImplementation$b;)V
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/hv;->a(Lcom/google/android/gms/internal/hw;)V
+
+    return-void
+.end method
+
+.method public b(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/internal/hu$a;
+    .locals 2
+
+    new-instance v0, Lcom/google/android/gms/internal/hz$b;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lcom/google/android/gms/internal/hz$b;-><init>(Lcom/google/android/gms/common/api/Status;Landroid/os/ParcelFileDescriptor;)V
+
+    return-object v0
+.end method
+
+.method public synthetic c(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/Result;
+    .locals 1
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/hz$1;->b(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/internal/hu$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method

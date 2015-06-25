@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>10 phút</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>10% nguồn pin</item>
+        <item>30% nguồn pin</item>
+        <item>50% nguồn pin</item>
+        <item>Tắt</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Im lặng</item>
+        <item>Chỉ rung</item>
+        <item>Chỉ âm thanh</item>
+        <item>Rung và âm thanh</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Im lặng</item>
+        <item>Chỉ rung</item>
+        <item>Âm thanh</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Ngày</item>
+        <item>Tuần</item>
+        <item>Tháng</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>5 phút</item>
+        <item>15 phút</item>
+        <item>30 phút</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Một lần một ngày</item>
+        <item>Một lần một tuần</item>
+        <item>Không bao giờ</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Thấp</item>
+        <item>Cao (Được khuyến nghị)</item>
+        <item>Cực kỳ Nhạy cảm</item>
+    </string-array>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="20.0dip" android:layout_weight="2.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageViewAboutAppIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avg_logo" />
+                <TextView android:id="@id/textViewAboutVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/about_version" style="@style/TextWhiteMedium" />
+                <TextView android:linksClickable="true" android:id="@id/textViewTermsHyperlink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activation_terms" style="@style/TextGreyMedium" />
+                <TextView android:linksClickable="true" android:id="@id/textViewPrivacyHyperlink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activation_privacy" style="@style/TextGreyMedium" />
+                <TextView android:linksClickable="true" android:id="@id/textViewSourceLicHyperlink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activation_open_source" style="@style/TextGreyMedium" />
+            </LinearLayout>
+        </ScrollView>
+        <com.avg.ui.general.customviews.SocialPanelView android:id="@id/socialPanelView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" />
+        <Button android:id="@id/buttonAboutMoveApps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more_apps" />
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+</LinearLayout>

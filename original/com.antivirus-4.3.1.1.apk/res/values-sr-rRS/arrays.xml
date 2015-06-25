@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minut</item>
+        <item>2 minuta</item>
+        <item>10 minuta</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>10% energije baterije</item>
+        <item>30% energije baterije</item>
+        <item>50% energije baterije</item>
+        <item>Isklj.</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Tiho</item>
+        <item>Samo vibracija</item>
+        <item>Samo zvuk</item>
+        <item>Zvuk i vibracija</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Tiho</item>
+        <item>Samo vibracija</item>
+        <item>Zvuk</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Dana</item>
+        <item>Sedmica</item>
+        <item>Meseci</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 sekundi</item>
+        <item>1 minut</item>
+        <item>5 minuta</item>
+        <item>15 minuta</item>
+        <item>30 minuta</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Jednom dnevno</item>
+        <item>Jednom sedmično</item>
+        <item>Nikada</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Nisko</item>
+        <item>Visoko (preporučeno)</item>
+        <item>Veoma osetljivo</item>
+    </string-array>
+</resources>

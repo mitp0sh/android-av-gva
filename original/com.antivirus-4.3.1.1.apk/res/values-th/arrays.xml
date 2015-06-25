@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>10 นาที</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>พลังงานจากแบตเตอรี่ 10%</item>
+        <item>พลังงานจากแบตเตอรี่ 30%</item>
+        <item>พลังงานจากแบตเตอรี่ 50%</item>
+        <item>ปิด</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>เงียบ</item>
+        <item>ระบบสั่นเท่านั้น</item>
+        <item>เสียงเท่านั้น</item>
+        <item>เสียงและระบบสั่น</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>เงียบ</item>
+        <item>ระบบสั่นเท่านั้น</item>
+        <item>เสียง</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>วัน</item>
+        <item>สัปดาห์</item>
+        <item>เดือน</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>5 นาที</item>
+        <item>15 นาที</item>
+        <item>30 นาที</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>วันละครั้ง</item>
+        <item>สัปดาห์ละครั้ง</item>
+        <item>ไม่</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>ต่ำ</item>
+        <item>สูง (แนะนำ)</item>
+        <item>ไวเป็นพิเศษ</item>
+    </string-array>
+</resources>

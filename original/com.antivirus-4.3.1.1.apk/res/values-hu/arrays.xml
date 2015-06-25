@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>10 perc</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>10%-os akkumulátortöltöttség</item>
+        <item>30%-os akkumulátortöltöttség</item>
+        <item>50%-os akkumulátortöltöttség</item>
+        <item>Ki</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Néma</item>
+        <item>Csak rezgés</item>
+        <item>Csak hang</item>
+        <item>Hang és rezgés</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Néma</item>
+        <item>Csak rezgés</item>
+        <item>Hang</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Napi</item>
+        <item>Heti</item>
+        <item>Havi</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>5 perc</item>
+        <item>15 perc</item>
+        <item>30 perc</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Naponta egyszer</item>
+        <item>Hetente egyszer</item>
+        <item>Soha</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Alacsony</item>
+        <item>Magas (ajánlott)</item>
+        <item>Különösen érzékeny</item>
+    </string-array>
+</resources>

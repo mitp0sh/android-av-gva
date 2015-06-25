@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="dual_pane_top_weight">4</integer>
+    <integer name="dual_pane_bottom_weight">5</integer>
+</resources>

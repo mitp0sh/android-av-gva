@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="overlay_web_view_height_ratio_portrait">73</integer>
+    <integer name="overlay_web_view_height_ratio_landscape">95</integer>
+    <integer name="dual_pane_top_weight">5</integer>
+    <integer name="dual_pane_bottom_weight">13</integer>
+    <integer name="scan_category_item_counter_span_size">30</integer>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avg="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/abc_ic_search" android:id="@id/menu_item_search" android:title="@string/abc_searchview_description_search" avg:showAsAction="always" avg:actionViewClass="android.support.v7.widget.SearchView" />
+    <item android:icon="@drawable/ab_btn_filter" android:id="@id/menu_item_filter" android:title="@string/callMessageFilterMenuItemSort" avg:showAsAction="always">
+        <menu>
+            <item android:id="@id/all_contacts" android:title="@string/callMessageFilterAllContacts" />
+            <item android:id="@id/blocked_contact" android:title="@string/callMessageFilterBlockedContacts" />
+            <item android:id="@id/trusted_contacts" android:title="@string/callMessageFilterTrustedContacts" />
+        </menu>
+    </item>
+</menu>

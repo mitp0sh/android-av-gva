@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <RadioButton android:id="@id/radioButtonBillingOption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:id="@id/textViewBillingOptionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/testing" android:layout_toRightOf="@id/radioButtonBillingOption" style="@style/TextWhiteMedium" />
+        <TextView android:id="@id/textViewBillingOptionSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/testing" android:layout_below="@id/textViewBillingOptionTitle" android:layout_alignLeft="@id/textViewBillingOptionTitle" style="@style/TextGreySmall" />
+    </RelativeLayout>
+    <FrameLayout android:background="#33aaaaaa" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+</LinearLayout>

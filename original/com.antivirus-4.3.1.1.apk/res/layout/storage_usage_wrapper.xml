@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/batteryViewWrapper" android:background="@drawable/storage_bg_shape" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginLeft="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.avg.tuneup.ui.views.StorageUsageView android:layout_gravity="center_vertical" android:id="@id/storageUsageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="3.0dip" />
+    <TextView android:gravity="center" android:layout_gravity="center|left" android:id="@id/tv_memory_internal" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/testing" style="@style/ProgressText" />
+    <TextView android:gravity="center" android:layout_gravity="center|right" android:id="@id/tv_free_memory_internal" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/testing" style="@style/ProgressText" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:scan_view="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/centerTransparentDummy" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_centerInParent="true" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/vendor_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:contentDescription="@string/DummyContentDescription" />
+    <com.antivirus.ui.scan.ScanInProgressViewWrapper android:id="@id/scanIsRunningLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" scan_view:layout_type="full" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/status_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/app_landing_no_threats" android:layout_centerVertical="true" android:contentDescription="@string/DummyContentDescription" />
+        <TextView android:id="@id/scanResultsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_landing_no_threats" android:layout_toRightOf="@id/status_image" android:layout_centerVertical="true" style="@style/TextWhiteLarge" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:scan_view="http://schemas.android.com/apk/res-auto">
+    <com.avg.ui.general.customviews.Dashboard android:layout_gravity="center" android:id="@id/dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/scan_part" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.antivirus.ui.scan.ScanInProgressViewWrapper android:gravity="center_horizontal" android:id="@id/detailsAndProgressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" scan_view:layout_type="dashboard" />
+    </LinearLayout>
+</FrameLayout>

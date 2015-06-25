@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:HorizontalAnimatedProgressBar="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/centerTransparentDummy" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/callsLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/centerTransparentDummy" android:layout_above="@id/cancelButtonWrapper" android:layout_centerHorizontal="true">
+        <TextView android:id="@id/threatCounterTextView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sip_no_threats_found_so_far" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextWhiteLarge" />
+        <FrameLayout android:id="@id/centerUpperTransparentDummy" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" />
+        <com.avg.ui.general.customviews.HorizontalAnimatedProgressBar android:id="@id/scanProgressBar" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="18.0dip" android:layout_alignParentTop="true" HorizontalAnimatedProgressBar:progress="0" HorizontalAnimatedProgressBar:max="100" />
+        <TextView android:ellipsize="end" android:gravity="left" android:id="@id/itemInProgressTextView" android:layout_width="fill_parent" android:layout_height="24.0sp" android:text="@string/sip_calculating_time" android:maxLines="1" android:singleLine="true" android:layout_below="@id/scanProgressBar" android:layout_alignParentLeft="true" style="@style/TextWhiteSmall" />
+        <RelativeLayout android:id="@id/scanInProgressDetailsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/itemInProgressTextView" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/centerLeftTransparentDummy" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/counterLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/centerLeftTransparentDummy">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/itemCounterTextView" android:layout_width="fill_parent" android:layout_height="25.0sp" android:layout_marginTop="10.0dip" android:text="@string/sip_unknown_items_count" android:layout_centerHorizontal="true" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/itemsScanned" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sip_item_scan_sub_title" android:layout_below="@id/itemCounterTextView" android:layout_centerHorizontal="true" style="@style/TextWhiteMedium" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/percentageLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/centerLeftTransparentDummy">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/percentageValueTextView" android:layout_width="fill_parent" android:layout_height="25.0sp" android:layout_marginTop="10.0dip" android:text="@string/sip_unknown_percentage" android:layout_centerHorizontal="true" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/percentageValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sip_percentage_sub_title" android:layout_below="@id/percentageValueTextView" android:layout_centerHorizontal="true" style="@style/TextWhiteMedium" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cancelButtonWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/centerTransparentDummy" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+        <Button android:textColor="@color/blue_note" android:id="@id/cancel_button" android:background="@color/transparent_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_button_cancle" android:singleLine="true" android:layout_centerHorizontal="true" style="@style/TextWhiteLarge" />
+    </RelativeLayout>
+</RelativeLayout>

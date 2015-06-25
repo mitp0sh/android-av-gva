@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avg="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/abc_ic_menu_moreoverflow_normal_holo_dark" android:id="@id/mainMenu" android:title="@string/menu_more" avg:showAsAction="always">
+        <menu>
+            <item android:id="@id/menuFollowUs" android:visible="true" android:title="@string/main_menu_follow_us" avg:showAsAction="never" />
+            <item android:id="@id/menuUpgrade" android:visible="false" android:title="@string/main_menu_upgrade" avg:showAsAction="never" />
+            <item android:id="@id/menuSubscribe" android:visible="false" android:title="@string/main_menu_subscribe" avg:showAsAction="never" />
+            <item android:id="@id/menuLicense" android:visible="false" android:title="@string/license_activation_block_title" avg:showAsAction="never" />
+            <item android:id="@id/menuHelp" android:visible="true" android:title="@string/help_preference" avg:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

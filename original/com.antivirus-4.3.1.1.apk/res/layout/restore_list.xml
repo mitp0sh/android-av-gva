@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/select_all_apps" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/select_all" />
+    <ListView android:id="@id/foldersToRestore" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/dashboard_list_item" android:cacheColorHint="@android:color/transparent" android:layout_above="@id/restore_button_holder" android:layout_below="@id/select_all_apps" />
+    <ListView android:id="@id/appsToRestore" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/dashboard_list_item" android:cacheColorHint="@android:color/transparent" android:layout_above="@id/restore_button_holder" android:layout_below="@id/select_all_apps" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/restore_button_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/restore_button_now" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

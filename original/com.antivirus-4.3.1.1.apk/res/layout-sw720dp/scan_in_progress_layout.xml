@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/scanInitTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/initializing" style="@style/TextWhiteLarge" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/scanInProgressDetailsLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="left" android:id="@id/scanInProgressDetailsPrefixTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:text="@string/scan_item_name_prefix" style="@style/TextWhiteLarge" />
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@id/scanInProgressDetailsDataTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DummyContentDescription" android:lines="1" android:singleLine="true" android:layout_toLeftOf="@id/scanItemCounterTextView" android:layout_toRightOf="@id/scanInProgressDetailsPrefixTextView" style="@style/TextWhiteLarge" />
+            <TextView android:gravity="right" android:id="@id/scanItemCounterDataTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="@string/DummyContentDescription" android:layout_alignParentRight="true" style="@style/TextWhiteLarge" />
+            <TextView android:gravity="right" android:id="@id/scanItemCounterTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/scan_item_count_prefix" android:layout_toLeftOf="@id/scanItemCounterDataTextView" style="@style/TextWhiteLarge" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.avg.ui.general.customviews.AvgProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/cancel_button" android:layout_width="@dimen/main_button_width" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/scan_button_cancle" />
+</LinearLayout>

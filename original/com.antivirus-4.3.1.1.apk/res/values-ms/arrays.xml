@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 saat</item>
+        <item>30 saat</item>
+        <item>1 minit</item>
+        <item>2 minit</item>
+        <item>10 minit</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>10% kuasa bateri</item>
+        <item>30% kuasa bateri</item>
+        <item>50% kuasa bateri</item>
+        <item>Mati</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Senyap</item>
+        <item>Getaran sahaja</item>
+        <item>Bunyi sahaja</item>
+        <item>Bunyi dan getaran</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Senyap</item>
+        <item>Getaran sahaja</item>
+        <item>Bunyi</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Hari</item>
+        <item>Minggu</item>
+        <item>Bulan</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 saat</item>
+        <item>1 minit</item>
+        <item>5 minit</item>
+        <item>15 minit</item>
+        <item>30 minit</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Sekali sehari</item>
+        <item>Sekali seminggu</item>
+        <item>Jangan sekali-kali</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Rendah</item>
+        <item>Tinggi (Disyorkan)</item>
+        <item>Amat Sensitif</item>
+    </string-array>
+</resources>

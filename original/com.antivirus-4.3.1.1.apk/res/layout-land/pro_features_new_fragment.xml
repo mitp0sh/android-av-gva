@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pro_item="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/thanks_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/pro_features_thank_you" android:layout_alignParentTop="true" style="@style/TextWhiteLarge" />
+    <TextView android:gravity="center_horizontal" android:id="@id/enjoy_app_view" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pro_features_enjoy_new" android:layout_below="@id/thanks_text_view" style="@style/TextWhiteMedium" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttons_layout" android:layout_below="@id/enjoy_app_view">
+        <TableLayout android:id="@id/features_part" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.antivirus.ui.main.ProFeaturesItemViewNew android:id="@id/camera_trap_item" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" pro_item:image="@drawable/camera_trap" pro_item:text="@string/pro_features_camera_trap_new" />
+                <com.antivirus.ui.main.ProFeaturesItemViewNew android:id="@id/app_locker_item" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" pro_item:image="@drawable/app_locker" pro_item:text="@string/pro_features_app_locker_new" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.antivirus.ui.main.ProFeaturesItemViewNew android:id="@id/sim_lock_item" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" pro_item:image="@drawable/sim_lock" pro_item:text="@string/pro_features_sim_lock_new" />
+                <com.antivirus.ui.main.ProFeaturesItemViewNew android:id="@id/app_backup_item" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" pro_item:image="@drawable/app_backup" pro_item:text="@string/pro_features_app_backup_new" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/buttons_layout" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/buy_pro" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/pro_features_buy_pro_now_new" android:singleLine="true" android:layout_weight="1.0" style="@style/GreenButtonHolo" />
+        <Button android:id="@id/continue_with_free" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pro_features_continue_with_free_new" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

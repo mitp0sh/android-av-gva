@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avg="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/actionbar_pre_defined_directory" android:id="@id/fileScannerMenu" android:title="@string/menu_location" avg:showAsAction="always">
+        <menu>
+            <item android:id="@id/menuSdcard" android:visible="false" android:title="@string/sdcard" avg:showAsAction="never" />
+            <item android:id="@id/menuDownloads" android:visible="false" android:title="@string/downloads" avg:showAsAction="never" />
+            <item android:id="@id/menuMovies" android:visible="false" android:title="@string/movies" avg:showAsAction="never" />
+            <item android:id="@id/menuMusic" android:visible="false" android:title="@string/music" avg:showAsAction="never" />
+            <item android:id="@id/menuPictures" android:visible="false" android:title="@string/pictures" />
+        </menu>
+    </item>
+</menu>

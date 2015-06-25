@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>10 minút</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>10 % kapacity batérie</item>
+        <item>30 % kapacity batérie</item>
+        <item>50 % kapacity batérie</item>
+        <item>Vyp</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Tiché</item>
+        <item>Len vibrácie</item>
+        <item>Len zvuk</item>
+        <item>Zvuk a vibrácie</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Tiché</item>
+        <item>Len vibrácie</item>
+        <item>Zvuk</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Deň/Dní</item>
+        <item>Týždeň/Týždňov</item>
+        <item>Mesiac/Mesiacov</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>5 minút</item>
+        <item>15 minút</item>
+        <item>30 minút</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Jedenkrát denne</item>
+        <item>Jedenkrát týždenne</item>
+        <item>Nikdy</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Nízka</item>
+        <item>Vysoká (odporúčané)</item>
+        <item>Veľmi citlivá</item>
+    </string-array>
+</resources>

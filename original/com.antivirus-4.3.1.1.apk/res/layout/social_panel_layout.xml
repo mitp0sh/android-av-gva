@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/buttonLike" android:background="@drawable/selector_simple_btn_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/google_plus_app" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/buttonShare" android:background="@drawable/selector_simple_btn_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/share_app" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/buttonRate" android:background="@drawable/selector_simple_btn_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/rate_app" android:layout_weight="1.0" />
+</LinearLayout>

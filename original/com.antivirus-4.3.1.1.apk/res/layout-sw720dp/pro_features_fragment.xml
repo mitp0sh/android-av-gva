@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pro_item="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.95">
+        <TextView android:gravity="center" android:id="@id/thanks_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/pro_features_thank_you" style="@style/TextWhiteExtraLarge" />
+        <TextView android:gravity="center_horizontal" android:id="@id/enjoy_app_view" android:paddingTop="17.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pro_features_enjoy" style="@style/TextWhiteLarge" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.8">
+        <RelativeLayout android:id="@id/features_part" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip">
+            <FrameLayout android:id="@id/features_strut" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" />
+            <com.antivirus.ui.main.ProFeaturesItemView android:id="@id/camera_trap_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignRight="@id/features_strut" pro_item:image="@drawable/camera_trap" pro_item:text="@string/pro_features_camera_trap" />
+            <com.antivirus.ui.main.ProFeaturesItemView android:id="@id/app_locker_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignLeft="@id/features_strut" pro_item:image="@drawable/app_locker" pro_item:text="@string/pro_features_app_locker" />
+            <com.antivirus.ui.main.ProFeaturesItemView android:id="@id/sim_lock_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/camera_trap_item" android:layout_alignRight="@id/features_strut" pro_item:image="@drawable/sim_lock" pro_item:text="@string/pro_features_sim_lock" />
+            <com.antivirus.ui.main.ProFeaturesItemView android:id="@id/app_backup_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/app_locker_item" android:layout_alignLeft="@id/features_strut" pro_item:image="@drawable/app_backup" pro_item:text="@string/pro_features_app_backup" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/button_part" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.9">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/buttonsLayout" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginRight="60.0dip" android:layout_alignParentBottom="true">
+            <Button android:textSize="19.0dip" android:id="@id/buy_pro" android:layout_width="0.0dip" android:layout_height="72.0dip" android:layout_marginBottom="5.0dip" android:text="@string/pro_features_buy_pro_now" android:singleLine="true" android:layout_weight="0.95" style="@style/GreenButtonHolo" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="0.1" />
+            <Button android:textSize="19.0dip" android:id="@id/continue_with_free" android:layout_width="0.0dip" android:layout_height="72.0dip" android:layout_marginBottom="5.0dip" android:text="@string/pro_features_continue_with_free" android:singleLine="true" android:layout_weight="0.95" />
+        </LinearLayout>
+        <TextView android:id="@id/not_enough" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pro_features_not_enough" android:layout_above="@id/arrow" android:layout_centerHorizontal="true" style="@style/TextWhiteLarge" />
+        <ImageView android:id="@id/arrow" android:paddingRight="30.0dip" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/arrow_portrait" android:layout_above="@id/buttonsLayout" android:layout_centerHorizontal="true" />
+        <FrameLayout android:id="@id/strut" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_below="@id/arrow" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

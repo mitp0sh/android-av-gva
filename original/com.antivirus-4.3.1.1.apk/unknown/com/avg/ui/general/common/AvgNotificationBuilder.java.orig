@@ -1,0 +1,287 @@
+package com.avg.ui.general.common;
+
+import android.app.Notification;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
+
+import com.avg.toolkit.logger.Logger;
+import com.avg.ui.general.UIConstants;
+import com.avg.ui.general.activities.AbstractLandingActivity;
+import com.avg.ui.general.components.NotificationDismissedReceiver;
+import com.avg.ui.general.navigation.Navigator;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Created by on 12/2/2014.
+ * Creates notification using <a href="http://www.javacodegeeks.com/2013/01/the-builder-pattern-in-practice.html">builder pattern</a>
+ */
+public class AvgNotificationBuilder {
+
+	public static final String EXTRA_NOTIFICATION_ID = "extra_notification_id";
+
+	private Context context;
+	private String tickerText = "";
+	private String titleText = "";
+	private String body = "";
+	private int icon = android.R.drawable.sym_def_app_icon;
+	private int notificationId = 0;
+	private Bundle extras = new Bundle();
+	private Intent notificationIntent;
+	private Class<? extends AbstractLandingActivity> landingActivityClass;
+	private ArrayList<String> navigationChain;
+	private int notificationFlags = -1;
+	private int intentFlags = -1;
+	private PendingIntent pendingIntent = null;
+	private List<NotificationCompat.Action> actions = new ArrayList<>();
+	private long when;
+
+<<<<<<< HEAD
+	private int progress = 0;
+	private int max = 0;
+	private boolean indeterminate = false;
+
+
+
+=======
+>>>>>>> master
+	/**
+	 * Base constructor for bulder
+	 * @param context Application context
+	 * @param notificationId notification ID
+	 */
+	public AvgNotificationBuilder(Context context, int notificationId) {
+		this.notificationId = notificationId;
+		this.context = context.getApplicationContext();
+	}
+
+	/**
+	 *
+	 * @param tickerText ticker text as plain string
+	 */
+	public AvgNotificationBuilder setTickerText(String tickerText) {
+		this.tickerText = tickerText;
+		return this;
+	}
+
+	/**
+	 *
+	 * @param titleText title text as plain string
+	 */
+	public AvgNotificationBuilder setTitleText(String titleText) {
+		this.titleText = titleText;
+		return this;
+	}
+
+	/**
+	 *
+	 * @param body notification content text as plain string
+	 */
+	public AvgNotificationBuilder setBody(String body) {
+		this.body = body;
+		return this;
+	}
+
+	/**
+	 *
+	 * @param tickerText ticker text as resource string id
+	 */
+	public AvgNotificationBuilder setTickerText(int tickerText) {
+		this.tickerText = context.getString(tickerText);
+		return this;
+	}
+
+	/**
+	 *
+	 * @param titleText title text as resource string id
+	 */
+	public AvgNotificationBuilder setTitleText(int titleText) {
+		this.titleText = context.getString(titleText);
+		return this;
+	}
+
+	/**
+	 *
+	 * @param body ticker text as resource string id
+	 */
+	public AvgNotificationBuilder setBody(int body) {
+		this.body = context.getString(body);
+		return this;
+
+	}
+
+	public AvgNotificationBuilder setNotificationIntent(Intent notificationIntent) {
+		this.notificationIntent = notificationIntent;
+		return this;
+	}
+
+	public AvgNotificationBuilder setIcon(int icon) {
+		this.icon = icon;
+		return this;
+	}
+
+	/**
+	 * In case the notification pending intent should take the user to some fragment inside the application, i.e. not the landing screen
+	 * this method is the answer. It creates a {@code PendingIntent} that will take the user to desired screen, while creating and maintaining
+	 * correct fragment back stack
+	 * @param landingActivityClass {@code Class} of the application Landing Activity ,e.g. {@code MyLandingActivity.class}
+	 * @param fragmentChain set of fully classified Fragment class names, from the landing to the last one the will be shown to user,
+	 *                      <p/>   e.g. "com.example.MyLandingFragment", "com.example.MySecondFragment", ..., "com.example.MyFinalFragment"
+	 */
+	public AvgNotificationBuilder addNavigationParameters(Class<? extends AbstractLandingActivity> landingActivityClass,
+														  String ... fragmentChain)
+	{
+		this.landingActivityClass = landingActivityClass;
+		if(fragmentChain != null && fragmentChain.length > 0)
+			navigationChain = new ArrayList<>(Arrays.asList(fragmentChain));
+		return this;
+	}
+	public AvgNotificationBuilder setNotificationFlags(int notificationFlags) {
+		this.notificationFlags = notificationFlags;
+		return this;
+	}
+
+	public AvgNotificationBuilder setIntentFlags(int intentFlags) {
+		this.intentFlags = intentFlags;
+		return this;
+
+	}
+
+	public AvgNotificationBuilder addExtras(Bundle extras)
+	{
+		this.extras.putAll(extras);
+		return this;
+	}
+
+
+	public AvgNotificationBuilder setPendingIntent(PendingIntent pendingIntent) {
+		this.pendingIntent = pendingIntent;
+		return this;
+	}
+
+	public AvgNotificationBuilder addAction(NotificationCompat.Action action)
+	{
+		actions.add(action);
+		return this;
+	}
+
+	public AvgNotificationBuilder addNavigationAction(int actionIcon, CharSequence actionText, int actionId,
+			Bundle intentExtras, Class<? extends AbstractLandingActivity> landingActivityClass, String ... fragmentChain)
+	{
+		Intent contentIntent = new Intent(context, landingActivityClass);
+		if(intentExtras != null) {
+			contentIntent.putExtras(intentExtras);
+		}
+		contentIntent.putStringArrayListExtra(Navigator.CHAIN_NAVIGATION_KEY, new ArrayList<>(Arrays.asList(fragmentChain)));
+		contentIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+		contentIntent.putExtra(UIConstants.EXTERNAL_NAVIGATION, true);
+		PendingIntent navigationPendingIntent = PendingIntent.getActivity(context, actionId, contentIntent,
+				PendingIntent.FLAG_CANCEL_CURRENT);
+		NotificationCompat.Action action = new NotificationCompat.Action(actionIcon, actionText, navigationPendingIntent);
+		actions.add(action);
+		return this;
+	}
+
+	public AvgNotificationBuilder setWhen(long when){
+		this.when = when;
+		return this;
+	}
+
+	public AvgNotificationBuilder setProgress(int progress, int max, boolean indeterminate)
+	{
+		this.progress = progress;
+		this.max = max;
+		this.indeterminate = indeterminate;
+		return this;
+	}
+	/**
+	 * Use this method after you've set all the parameters. Once this method call is issued, the notification will be build
+	 * and fired to the Notification Manager
+	 */
+	public void createAndShow()
+	{
+		if(pendingIntent ==null)
+		{
+			if(notificationIntent == null)
+			{
+				if(landingActivityClass != null && navigationChain != null)
+				{
+					notificationIntent = new Intent(context, landingActivityClass);
+					notificationIntent.putStringArrayListExtra(Navigator.CHAIN_NAVIGATION_KEY, navigationChain);
+					if(intentFlags <= 0 )
+						intentFlags = Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP;
+					notificationIntent.putExtra(UIConstants.EXTERNAL_NAVIGATION, true);
+
+				}
+				else
+				{
+					Logger.warning("Given notification doesn't have specified Pending Intent");
+				}
+			}
+			if(notificationIntent != null)
+			{
+				notificationIntent.putExtras(extras);
+				notificationIntent.setFlags(intentFlags);
+				pendingIntent = PendingIntent.getActivity(context, notificationId, notificationIntent,
+						PendingIntent.FLAG_CANCEL_CURRENT);
+			}
+		}
+
+
+
+
+		NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+		builder.setContentTitle(titleText);
+		builder.setContentText(body);
+		builder.setTicker(tickerText);
+		builder.setSmallIcon(icon);
+		if (when != 0) {
+			builder.setWhen(when);
+		}
+
+		if(pendingIntent != null)
+			builder.setContentIntent(pendingIntent);
+		builder.setDeleteIntent(getDefaultNotificationDismissIntent(extras));
+		for (NotificationCompat.Action action : actions) {
+			builder.addAction(action);
+		}
+
+
+		builder.setProgress(max, progress, indeterminate);
+
+		Notification notification = builder.build();
+
+		notification.defaults |= Notification.DEFAULT_LIGHTS;
+		if (notificationFlags > 0) {
+			notification.flags = notificationFlags;
+		} else {
+			notification.flags = Notification.FLAG_AUTO_CANCEL;
+		}
+
+		NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
+		notificationManager.notify(notificationId, notification);
+
+	}
+
+
+
+
+	private PendingIntent getDefaultNotificationDismissIntent(Bundle extras) {
+		Intent deleteIntent = new Intent(context, NotificationDismissedReceiver.class);
+		if (extras != null) {
+			deleteIntent.putExtras(extras);
+		}
+		deleteIntent.putExtra(EXTRA_NOTIFICATION_ID, notificationId);
+
+		return PendingIntent.getBroadcast(context, notificationId, deleteIntent, 0);
+	}
+
+
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/onboarding_icon_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onboarding_icon_1" android:layout_centerInParent="true" />
+        <ImageView android:paddingLeft="10.0dip" android:paddingBottom="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/free_thing" android:layout_toRightOf="@id/onboarding_icon_1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/onboarding_protection_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_protection_title" android:layout_centerHorizontal="true" style="@style/TextBlueLarge" />
+        <TextView android:id="@id/web_surfing" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_protection_web_surfing" android:drawableLeft="@drawable/bullet" android:drawablePadding="10.0dip" android:layout_below="@id/onboarding_protection_title" android:layout_centerHorizontal="true" style="@style/TextGreyMedium" />
+        <TextView android:id="@id/downloading" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_protection_downloading" android:drawableLeft="@drawable/bullet" android:drawablePadding="10.0dip" android:layout_below="@id/web_surfing" android:layout_alignLeft="@id/web_surfing" style="@style/TextGreyMedium" />
+        <TextView android:id="@id/texting" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_protection_texting" android:drawableLeft="@drawable/bullet" android:drawablePadding="10.0dip" android:layout_below="@id/downloading" android:layout_alignLeft="@id/web_surfing" style="@style/TextGreyMedium" />
+    </RelativeLayout>
+</LinearLayout>

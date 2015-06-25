@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/top_stripe" android:background="@drawable/action_bar_stripe" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/middle_part" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_stripe" />
+</RelativeLayout>

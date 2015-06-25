@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_scan_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/strut" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" />
+            <com.avg.ui.general.customviews.AppLandingButton android:id="@id/protection" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="1.0dip" android:layout_alignRight="@id/strut" android:layout_alignParentLeft="true" />
+            <com.avg.ui.general.customviews.AppLandingButton android:id="@id/anti_theft" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_alignLeft="@id/strut" android:layout_alignParentRight="true" />
+            <FrameLayout android:id="@id/strut2" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_below="@id/performance" android:layout_centerHorizontal="true" />
+            <com.avg.ui.general.customviews.AppLandingButton android:id="@id/performance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="1.0dip" android:layout_below="@id/protection" android:layout_alignRight="@id/strut2" android:layout_alignParentLeft="true" />
+            <com.avg.ui.general.customviews.AppLandingButton android:id="@id/privacy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_below="@id/anti_theft" android:layout_alignLeft="@id/strut2" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/scanViewWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/scroll_scan_result" android:layout_alignParentBottom="true">
+        <View android:id="@id/centerTransparentDummy" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+        <include android:id="@id/scanView" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/scan_view_layout" />
+        <Button android:id="@id/btn_scan" android:background="@drawable/btn_blue_holo_dark" android:layout_width="@dimen/main_button_width" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/centerTransparentDummy" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/centerBottomTransparentDummy" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/protect_another_device_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:gravity="center" android:id="@id/protect_another_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/protection_protect_another_device_title" android:singleLine="true" android:drawableLeft="@drawable/protect_another_device_icon" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/TextWhiteLarge" />
+    </RelativeLayout>
+</RelativeLayout>

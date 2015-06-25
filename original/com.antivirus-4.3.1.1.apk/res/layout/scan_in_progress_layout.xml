@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/scanInitTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/initializing" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/TextWhiteLarge" />
+    <LinearLayout android:orientation="vertical" android:id="@id/scanInProgressDetailsLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/scanInitTextView">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="left" android:id="@id/scanInProgressDetailsPrefixTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/scan_item_name_prefix" android:lines="1" android:singleLine="true" />
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@id/scanInProgressDetailsDataTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip">
+            <TextView android:gravity="left" android:id="@id/scanItemCounterTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/scan_item_count_prefix" />
+            <TextView android:gravity="left" android:id="@id/scanItemCounterDataTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.avg.ui.general.customviews.AvgProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/scanInProgressDetailsLayout" />
+    <Button android:layout_gravity="bottom|center" android:id="@id/cancel_button" android:background="@drawable/btn_blue_holo_dark" android:visibility="gone" android:layout_width="@dimen/main_button_width" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:maxWidth="300.0dip" android:singleLine="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

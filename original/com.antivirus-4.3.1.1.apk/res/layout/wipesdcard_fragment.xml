@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" android:layout_above="@id/wipesd_button_holder" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/wipesd_text_header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0sp" style="@style/ListItemTitle" />
+            <TextView android:id="@id/wipesd_text_body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0sp" style="@style/ListItemBody" />
+            <EditText android:id="@id/confirm_edittext" android:nextFocusLeft="@id/text" android:nextFocusUp="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:inputType="number" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wipesd_button_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/wipesd_button_ok" android:layout_width="140.0dip" android:layout_height="wrap_content" />
+        <Button android:id="@id/wipesd_button_cancel" android:layout_width="140.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

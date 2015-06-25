@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dashboard="http://schemas.android.com/apk/res-auto">
+    <com.avg.ui.general.customviews.DashboardListItem android:id="@id/listItem1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.avg.ui.general.customviews.DashboardListItem android:id="@id/listItem2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.avg.ui.general.customviews.DashboardListItem android:id="@id/listItem3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

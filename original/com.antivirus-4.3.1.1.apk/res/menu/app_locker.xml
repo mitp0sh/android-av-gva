@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avg="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/abc_ic_menu_moreoverflow_normal_holo_dark" android:id="@id/appLockerMenu" android:title="@string/menu_menu" avg:showAsAction="always">
+        <menu>
+            <item android:id="@id/menuChangePassword" android:title="@string/password" avg:showAsAction="never" />
+            <item android:id="@id/menuTimer" android:title="@string/activate_timer" avg:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

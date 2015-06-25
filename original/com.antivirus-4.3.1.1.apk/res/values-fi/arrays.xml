@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>10 minuuttia</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>10 % akkutehosta</item>
+        <item>30 % akkutehosta</item>
+        <item>50 % akkutehosta</item>
+        <item>Ei käytössä</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Äänetön</item>
+        <item>Vain värinä</item>
+        <item>Vain ääni</item>
+        <item>Ääni ja värinä</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Äänetön</item>
+        <item>Vain värinä</item>
+        <item>Ääni</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>Mt</item>
+        <item>Gt</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Päivää</item>
+        <item>Viikkoa</item>
+        <item>Kuukautta</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>5 minuuttia</item>
+        <item>15 minuuttia</item>
+        <item>30 minuuttia</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Kerran päivässä</item>
+        <item>Kerran viikossa</item>
+        <item>Ei koskaan</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Alhainen</item>
+        <item>Korkea (suositus)</item>
+        <item>Erittäin herkkä</item>
+    </string-array>
+</resources>

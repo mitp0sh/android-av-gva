@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avg="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@android:drawable/ic_menu_sort_by_size" android:id="@id/storageMenu" android:title="@string/menu_sort" avg:showAsAction="always">
+        <menu>
+            <item android:id="@id/menuSortBySize" android:title="@string/by_size" avg:showAsAction="never" />
+            <item android:id="@id/menuSortByName" android:title="@string/by_name" avg:showAsAction="never" />
+            <item android:id="@id/menuSortByLocation" android:visible="false" android:title="@string/by_location" avg:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

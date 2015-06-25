@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="abc_action_bar_default_height">56.0dip</dimen>
+    <dimen name="abc_action_bar_icon_vertical_padding">4.0dip</dimen>
+    <dimen name="abc_action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_bottom_margin">9.0dip</dimen>
+    <dimen name="dashboard_list_item_margin">0.0dip</dimen>
+    <dimen name="dashboard_list_title_size">18.0sp</dimen>
+    <dimen name="dashboard_list_subtitle_size">14.0sp</dimen>
+    <dimen name="app_landing_dashboard_title">18.0sp</dimen>
+    <dimen name="tos_text_size">22.0sp</dimen>
+    <dimen name="stop_shout_ll_margin_button">350.0dip</dimen>
+    <dimen name="antitheft_on_boarding_title_text_size">30.0sp</dimen>
+    <dimen name="antitheft_on_boarding_text_size">20.0sp</dimen>
+    <dimen name="antitheft_image_bottom_padding">30.0dip</dimen>
+    <dimen name="antitheft_onboarding_text_margin">20.0dip</dimen>
+    <dimen name="scan_results_group_item_top_padding">16.0dip</dimen>
+    <dimen name="scan_results_list_item_side_offset">20.0dip</dimen>
+    <dimen name="scan_results_group_header_drawable_padding">10.0dip</dimen>
+    <dimen name="scan_results_group_status_left_padding">80.0dip</dimen>
+    <dimen name="scan_results_child_item_top_bottom_padding">5.0dip</dimen>
+    <dimen name="scan_results_child_item_buttons_side_padding">20.0dip</dimen>
+    <dimen name="dashboard_button_padding_right">27.0dip</dimen>
+    <dimen name="dashboard_button_padding_left">27.0dip</dimen>
+    <dimen name="dashboard_button_padding_top">0.0dip</dimen>
+    <dimen name="dashboard_button_padding_bottom">0.0dip</dimen>
+    <dimen name="dashboard_scan_drawable_padding">50.0dip</dimen>
+    <dimen name="widget_margin">2.0dip</dimen>
+    <dimen name="widget_item_bottom">1.0dip</dimen>
+    <dimen name="text_size">9.0dip</dimen>
+    <dimen name="right_text_padding">4.0dip</dimen>
+</resources>

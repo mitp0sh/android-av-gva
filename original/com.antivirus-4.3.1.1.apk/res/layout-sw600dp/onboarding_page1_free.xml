@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/welcome_to" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:text="@string/welcom_to" style="@style/OnboardingSubtitle" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/product_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_logo_free_tablet" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/product_icon" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_margin="50.0dip" android:src="@drawable/splash_activation_av_free_icon" />
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/onboarding_first_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_tos_text" style="@style/OnboardingSubtitle" />
+</LinearLayout>

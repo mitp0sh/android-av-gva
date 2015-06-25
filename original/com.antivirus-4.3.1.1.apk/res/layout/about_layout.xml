@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/buttonAboutMoveApps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/more_apps" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.avg.ui.general.customviews.SocialPanelView android:orientation="horizontal" android:id="@id/socialPanelView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/buttonAboutMoveApps" android:layout_centerHorizontal="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" android:layout_above="@id/socialPanelView">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageViewAboutAppIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avg_logo" />
+            <TextView android:id="@id/textViewAboutVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/about_version" style="@style/TextWhiteMedium" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <TextView android:linksClickable="true" android:id="@id/textViewTermsHyperlink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activation_terms" style="@style/TextGreyMedium" />
+                <TextView android:linksClickable="true" android:id="@id/textViewPrivacyHyperlink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/activation_privacy" style="@style/TextGreyMedium" />
+                <TextView android:linksClickable="true" android:id="@id/textViewSourceLicHyperlink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/activation_open_source" style="@style/TextGreyMedium" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

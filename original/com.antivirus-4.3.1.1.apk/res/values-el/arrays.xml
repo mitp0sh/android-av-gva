@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>10 λεπτά</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>επίπεδο μπαταρίας 10%</item>
+        <item>επίπεδο μπαταρίας 30%</item>
+        <item>επίπεδο μπαταρίας 50%</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Αθόρυβο</item>
+        <item>Μόνο δόνηση</item>
+        <item>Μόνο ήχος</item>
+        <item>Ήχος και δόνηση</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Αθόρυβο</item>
+        <item>Μόνο δόνηση</item>
+        <item>Ήχος</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Ημέρες</item>
+        <item>Εβδομάδες</item>
+        <item>Μήνες</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>5 λεπτά</item>
+        <item>15 λεπτά</item>
+        <item>30 λεπτά</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Μία φορά την ημέρα</item>
+        <item>Μία φορά την εβδομάδα</item>
+        <item>Ποτέ</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Χαμηλή</item>
+        <item>Υψηλή (Συνιστάται)</item>
+        <item>Εξαιρετικά ευαίσθητη</item>
+    </string-array>
+</resources>

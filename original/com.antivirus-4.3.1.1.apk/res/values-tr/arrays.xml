@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>10 dakika</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>%10 pil gücü</item>
+        <item>%30 pil gücü</item>
+        <item>%50 pil gücü</item>
+        <item>Kapalı</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Sessiz</item>
+        <item>Yalnızca titreşim</item>
+        <item>Yalnızca ses</item>
+        <item>Ses ve titreşim</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Sessiz</item>
+        <item>Yalnızca titreşim</item>
+        <item>Ses</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>Gün</item>
+        <item>Hafta</item>
+        <item>Ay</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>5 dakika</item>
+        <item>15 dakika</item>
+        <item>30 dakika</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>Günde bir kez</item>
+        <item>Haftada bir kez</item>
+        <item>Hiçbir zaman</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Düşük</item>
+        <item>Yüksek (Önerilir)</item>
+        <item>Ekstra Hassas</item>
+    </string-array>
+</resources>

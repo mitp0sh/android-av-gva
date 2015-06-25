@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@android:style/Widget.Holo.ProgressBar.Horizontal" />
+    <style name="Widget.AppCompat.Base.ProgressBar" parent="@android:style/Widget.Holo.ProgressBar" />
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="@android:style/Widget.Holo.AutoCompleteTextView" />
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="@android:style/Widget.Holo.Light.AutoCompleteTextView" />
+    <style name="Theme.Base" parent="@android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+    </style>
+    <style name="Theme.Base.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Dialog.FixedSize" parent="@android:style/Theme.Holo.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowFixedWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="windowFixedHeightMinor">@dimen/dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="windowFixedHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Dialog.Light.FixedSize" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowFixedWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="windowFixedHeightMinor">@dimen/dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="windowFixedHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+    </style>
+    <style name="WidgetHoloTab">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:divider">@drawable/list_divider_holo_dark</item>
+        <item name="android:minWidth">80.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:tabStripLeft">@null</item>
+        <item name="android:tabStripRight">@null</item>
+        <item name="android:tabStripEnabled">false</item>
+        <item name="android:measureWithLargestChild">true</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">8.0dip</item>
+    </style>
+    <style name="WidgetActionBarHoloTab">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:tabStripLeft">@null</item>
+        <item name="android:tabStripRight">@null</item>
+        <item name="android:tabStripEnabled">false</item>
+        <item name="android:measureWithLargestChild">true</item>
+    </style>
+    <style name="Theme.AVG.HoloBase" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:dialogTheme">@style/AlertDialogHolo</item>
+    </style>
+    <style name="Theme.AVG.Action.Bar.EnabledBase" parent="@style/Theme.AppCompat">
+        <item name="android:actionBarStyle">@style/AVGActionBar</item>
+    </style>
+    <style name="Theme.AVG.No.Action.BarBase" parent="@style/Theme.AVG.Action.Bar.Enabled">
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light" />
+    <style name="DialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="mytheme" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:buttonStyle">@style/BlueButtonHolo</item>
+        <item name="android:windowBackground">@drawable/bg_blue</item>
+        <item name="android:progressBarStyleHorizontal">@style/progress_bar_horizontal</item>
+        <item name="android:actionBarSize">60.0dip</item>
+    </style>
+</resources>

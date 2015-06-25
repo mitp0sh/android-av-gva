@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sra_log_bottom_margin">10.0dip</dimen>
+    <dimen name="scan_results_group_item_top_padding">10.0dip</dimen>
+    <dimen name="scan_results_list_item_side_offset">20.0dip</dimen>
+    <dimen name="scan_results_group_header_drawable_padding">10.0dip</dimen>
+    <dimen name="scan_results_group_status_left_padding">60.0dip</dimen>
+    <dimen name="scan_results_child_item_top_bottom_padding">5.0dip</dimen>
+    <dimen name="scan_results_child_item_buttons_height">46.0dip</dimen>
+    <dimen name="scan_results_child_item_buttons_side_padding">18.0dip</dimen>
+    <dimen name="widget_margin">2.0dip</dimen>
+    <dimen name="widget_item_bottom">1.0dip</dimen>
+    <dimen name="text_size">9.0dip</dimen>
+    <dimen name="right_text_padding">4.0dip</dimen>
+</resources>

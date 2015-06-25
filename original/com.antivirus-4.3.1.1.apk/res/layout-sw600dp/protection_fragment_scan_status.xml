@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" style="?android:attr/listViewWhiteStyle">
+        <include android:id="@id/scanInfoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/protectionScanButton" android:layout_alignParentLeft="true" layout="@layout/protection_fragment_scan_view_layout" />
+        <Button android:gravity="center" android:id="@id/protectionScanButton" android:background="@drawable/btn_blue_holo_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="@string/testing" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/divider" android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

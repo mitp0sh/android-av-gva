@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dashboard_list_subtitle_size">16.0sp</dimen>
+    <dimen name="dashboard_title_size">20.0sp</dimen>
+    <dimen name="dashboard_subtitle_size">18.0sp</dimen>
+    <dimen name="app_landing_dashboard_title">20.0sp</dimen>
+    <dimen name="antitheft_on_boarding_title_text_size">30.0sp</dimen>
+    <dimen name="antitheft_on_boarding_text_size">20.0sp</dimen>
+    <dimen name="antitheft_image_bottom_padding">30.0dip</dimen>
+    <dimen name="antitheft_onboarding_text_margin">20.0dip</dimen>
+    <dimen name="scan_results_group_item_top_padding">20.0dip</dimen>
+    <dimen name="scan_results_list_item_side_offset">20.0dip</dimen>
+    <dimen name="scan_results_group_header_drawable_padding">12.0dip</dimen>
+    <dimen name="scan_results_group_status_left_padding">90.0dip</dimen>
+    <dimen name="scan_results_child_item_top_bottom_padding">6.0dip</dimen>
+    <dimen name="scan_results_child_item_buttons_side_padding">22.0dip</dimen>
+    <dimen name="dashboard_button_padding_right">35.0dip</dimen>
+    <dimen name="dashboard_button_padding_left">35.0dip</dimen>
+    <dimen name="dashboard_button_padding_top">25.0dip</dimen>
+    <dimen name="dashboard_button_padding_bottom">20.0dip</dimen>
+    <dimen name="dashboard_scan_drawable_padding">20.0dip</dimen>
+    <dimen name="widget_margin">2.0dip</dimen>
+    <dimen name="widget_item_bottom">1.0dip</dimen>
+    <dimen name="text_size">11.0dip</dimen>
+    <dimen name="right_text_padding">8.0dip</dimen>
+</resources>

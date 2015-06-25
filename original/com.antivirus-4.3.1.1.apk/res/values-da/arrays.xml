@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="battery_save_screen_timeout_array">
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minutter</item>
+        <item>10 minutter</item>
+    </string-array>
+    <string-array name="battery_save_power_threshold">
+        <item>10 %</item>
+        <item>30 %</item>
+        <item>50 %</item>
+        <item>Fra</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options">
+        <item>Lydløs</item>
+        <item>Kun vibration</item>
+        <item>Kun lyd</item>
+        <item>Lyd og vibration</item>
+    </string-array>
+    <string-array name="battery_save_ringer_options_ics">
+        <item>Lydløs</item>
+        <item>Kun vibration</item>
+        <item>Lyd</item>
+    </string-array>
+    <string-array name="traffic_quota_units">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="traffic_cycle_units">
+        <item>dage</item>
+        <item>uger</item>
+        <item>måneder</item>
+    </string-array>
+    <string-array name="traffic_refresh_rate_arr">
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>5 minutter</item>
+        <item>15 minutter</item>
+        <item>30 minutter</item>
+    </string-array>
+    <string-array name="entries_freq_preference">
+        <item>En gang dagligt</item>
+        <item>En gang ugentligt</item>
+        <item>Aldrig</item>
+    </string-array>
+    <string-array name="entries_scan_sensitivity">
+        <item>Lav</item>
+        <item>Høj (anbefalet)</item>
+        <item>Ekstra følsom</item>
+    </string-array>
+</resources>

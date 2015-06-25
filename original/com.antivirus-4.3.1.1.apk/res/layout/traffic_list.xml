@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/memory_use" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bottom_traffic_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/traffic_progress_bar_layout" />
+    <TextView android:id="@id/tv_title" android:background="@color/battery_state_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_below="@id/bottom_traffic_bar" style="@style/ListItemBody" />
+    <ProgressBar android:id="@id/apps_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="133.0dip" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:id="@id/tv_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/memory_loading" android:layout_below="@id/apps_progress_bar" android:layout_centerHorizontal="true" style="@style/ListItemBody" />
+    <ListView android:id="@id/lv_apps" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/dashboard_list_item" android:cacheColorHint="@android:color/transparent" android:layout_above="@id/tbtn_data_plan" android:layout_below="@id/tv_title" />
+    <ToggleButton android:textColor="@color/white" android:id="@id/tbtn_data_plan" android:background="@drawable/btn_toggle_holo_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textOn="@string/traffic_usage_count_on" android:textOff="@string/traffic_usage_count_off" android:layout_alignParentBottom="true" style="@style/WidgetHoloButtonToggle" />
+</RelativeLayout>

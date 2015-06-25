@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_scan_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_scan" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/dashboardContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+            <com.avg.ui.general.customviews.AppLandingButton android:id="@id/protection" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="1.0dip" android:layout_weight="1.0" />
+            <com.avg.ui.general.customviews.AppLandingButton android:id="@id/performance" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="1.0" />
+            <com.avg.ui.general.customviews.AppLandingButton android:id="@id/anti_theft" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="1.0dip" android:layout_weight="1.0" />
+            <com.avg.ui.general.customviews.AppLandingButton android:id="@id/privacy" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="1.0" />
+            <include android:id="@id/scanView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="100.0dip" android:layout_centerHorizontal="true" layout="@layout/scan_view_layout" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/btn_scan" android:background="@drawable/btn_blue_holo_dark" android:layout_width="@dimen/main_button_width" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_above="@id/protect_another_device" android:layout_centerHorizontal="true" />
+    <TextView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/protect_another_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/protection_protect_another_device_title" android:singleLine="true" android:drawableLeft="@drawable/protect_another_device_icon" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/TextWhiteLarge" />
+</RelativeLayout>

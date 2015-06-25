@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/manage_devices_connected_to_zen" style="@style/TextBlueLarge" />
+    <TextView android:gravity="center_horizontal" android:id="@id/textViewMail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="myemail@avg.com" style="@style/TextGreySmall" />
+    <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/buttonLogOut" android:background="@drawable/btn_blue_holo_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="56.0dip" android:text="@string/log_out" />
+</LinearLayout>
